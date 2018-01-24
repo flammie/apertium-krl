@@ -1,0 +1,480 @@
+!! Karelian lexc
+!! GNU GPLv3,
+!! Authors: Tommi A Pirinen etc. (see AUTHORS)
+
+Multichar_Symbols
+!! Apertium standard tags:
+%<abbr%>
+%<abe%>
+%<abl%>
+%<acc%>
+%<acr%>
+%<actv%>
+%<ade%>
+%<adj%>
+%<adv%>
+%<agent%>
+%<al%>
+%<all%>
+%<ant%>
+%<card%>
+%<cmp%>
+%<cmp-split%>
+%<cnjadv%>
+%<cnjcoo%>
+%<cnjsub%>
+%<cog%>
+%<com%>
+%<compound-R%>
+%<compound-only-L%>
+%<cond%>
+%<conneg%>
+%<def%>
+%<dem%>
+%<det%>
+%<ela%>
+%<enc%>
+%<ess%>
+%<f%>
+%<gen%>
+%<ij%>
+%<ill%>
+%<imp%>
+%<impers%>
+%<ind%>
+%<ine%>
+%<infa%>
+%<infe%>
+%<infma%>
+%<infminen%>
+%<ins%>
+%<itg%>
+%<lat%>
+%<loc%>
+%<m%>
+%<mf%>
+%<n%>
+%<neg%>
+%<nom%>
+%<np%>
+%<num%>
+%<ord%>
+%<p1%>
+%<p2%>
+%<p3%>
+%<par%>
+%<part%>
+%<past%>
+%<pasv%>
+%<pers%>
+%<pl%>
+%<pneg%>
+%<pos%>
+%<post%>
+%<pot%>
+%<pp%>
+%<pprs%>
+%<pri%>
+%<prn%>
+%<punct%>
+%<pxpl1%>
+%<pxpl2%>
+%<pxsg1%>
+%<pxsg2%>
+%<pxsp3%>
+%<qst%>
+%<qu%>
+%<rec%>
+%<reflex%>
+%<rel%>
+%<sg%>
+%<sp%>
+%<sup%>
+%<sym%>
+%<top%>
+%<tra%>
+%<use_archaic%>
+%<use_blacklist%>
+%<use_dialect%>
+%<use_foreign%>
+%<use_nonstd%>
+%<vaux%>
+%<vblex%>
+
+
+{-}
+
+LEXICON Root
+!! LEXICONS per class
+    0   NOUN ;
+    0   ADJ ;
+    0   VERB    ;
+    0   NUM ;
+    0   DIGITS ;
+    0   PRON    ;
+    0   ADP    ;
+    0   ADV    ;
+    0   INTJ ;
+    0   PUNCT ;
+    0   SYM ;
+    0   CCONJ ;
+    0   SCONJ ;
+    0   CCONJ|VERB ;
+    0   PROPN ;
+    0   ACRONYM ;
+    0   ABBREVIATION    ;
+    0   AUX    ;
+    0   DET    ;
+    0   X    ;
+0	SUFFIX	;
+
+
+LEXICON ADJ
+
+oma%<adj%>:om ADJ_OMA ;
+livvin#kieline%<adj%>:livvin0kieli ADJ_KIELI/NE ;
+pohjone%<adj%>:pohjo ADJ_KIELI/NE ;
+
+LEXICON ADP
+
+# ;
+
+LEXICON ADV
+
+# ;
+
+LEXICON AUX
+
+olla%<vaux%>:o AUX_O/LLA ;
+ei%<vaux%>:e AUX_E/I ;
+
+LEXICON CCONJ
+
+# ;
+
+LEXICON CCONJ|VERB
+
+# ;
+
+LEXICON DIGITS
+
+%0%<num%>:%0 # ;
+1%<num%>:1 # ;
+2%<num%>:2 # ;
+3%<num%>:3 # ;
+4%<num%>:4 # ;
+5%<num%>:5 # ;
+6%<num%>:6 # ;
+7%<num%>:7 # ;
+8%<num%>:8 # ;
+9%<num%>:9 # ;
+
+LEXICON DET
+
+# ;
+
+LEXICON INTJ
+
+# ;
+
+LEXICON NOUN
+
+lapsi%<n%>:laps NOUN_LAPS/I ;
+vähembistökieli%<n%>:vähembistökiel NOUN_LAPS/I ;
+ruado%<n%>:rua NOUN_RUA/DO ;
+elavuttamine%<n%>:elavuttami NOUN_ELAVUTTAMI/NE ;
+koti%<n%>:ko NOUN_KO/TI ;
+päivy#koti%<n%>:päivy0ko NOUN_KO/TI ;
+pohjone%<n%>:pohjo NOUN_ELAVUTTAMI/NE ;
+kieli#pezä%<n%>:kieli0pez NOUN_PEZ/Ä ;
+
+LEXICON NUM
+
+# ;
+
+LEXICON PRON
+
+# ;
+
+LEXICON PROPN
+
+Petroskoi%<np%>%<top%>:Petroskoi PROPN_PETROSKOI ;
+
+LEXICON PUNCT
+
+%!%<punct%>:%!	PUNCT_NONSTD_EXCL_LOOP	;
+?%<punct%>:?	PUNCT_NONSTD_EXCL_LOOP	;
+,%<punct%>:,	PUNCT_PISTE	;
+%;%<punct%>:%;	PUNCT_PISTE	;
+%:%<punct%>:%:	PUNCT_PISTE	;
+--%<punct%>:--	PUNCT_PISTE	;
+-%<punct%>:-	PUNCT_PISTE	;
+–%<punct%>:–	PUNCT_PISTE	;
+—%<punct%>:—	PUNCT_PISTE	;
+˗%<punct%>:˗	PUNCT_PISTE	;
+%>%<punct%>:%>	PUNCT_PISTE	;
+)%<punct%>:)	PUNCT_PISTE	;
+]%<punct%>:]	PUNCT_PISTE	;
+}%<punct%>:}	PUNCT_PISTE	;
+›%<punct%>:›	PUNCT_PISTE	;
+’%<punct%>:’	PUNCT_PISTE	;
+%"%<punct%>:%"	PUNCT_PISTE	;
+”%<punct%>:”	PUNCT_PISTE	;
+»%<punct%>:»	PUNCT_PISTE	;
+%<%<punct%>:%<	PUNCT_PISTE	;
+(%<punct%>:(	PUNCT_PISTE	;
+[%<punct%>:[	PUNCT_PISTE	;
+{%<punct%>:{	PUNCT_PISTE	;
+‹%<punct%>:‹	PUNCT_PISTE	;
+¡%<punct%>:¡	PUNCT_PISTE	;
+¿%<punct%>:¿	PUNCT_PISTE	;
+―%<punct%>:―	PUNCT_PISTE	;
+...%<punct%>:...	PUNCT_PISTE	;
+.%<punct%>:.	PUNCT_PISTE	;
+(%!)%<punct%>:(%!)	PUNCT_PISTE	;
+(?)%<punct%>:(?)	PUNCT_PISTE	;
+…%<punct%>:…	PUNCT_PISTE	;
+‥%<punct%>:‥	PUNCT_PISTE	;
+'%<punct%>:'	PUNCT_PISTE	;
+«%<punct%>:«	PUNCT_PISTE	;
+“%<punct%>:“	PUNCT_PISTE	;
+....%<punct%>:....	PUNCT_PISTE	;
+..%<punct%>:..	PUNCT_PISTE	;
+-%<punct%>:-	PUNCT_NONSTD_DASH_LOOP	;
+’%<punct%>:’	PUNCT_PISTE	;
+%"%<punct%>:%"	PUNCT_PISTE	;
+”%<punct%>:”	PUNCT_PISTE	;
+»%<punct%>:»	PUNCT_PISTE	;
+/%<punct%>%<n%>:/	PUNCT_PISTE	;
+*%<punct%>:*	PUNCT_PISTE	;
+%!%<punct%>:%!	PUNCT_PISTE	;
+?%<punct%>:?	PUNCT_PISTE	;
+´%<punct%>:´	PUNCT_PISTE	;
+`%<punct%>:`	PUNCT_PISTE	;
+'%<punct%>:'	PUNCT_PISTE	;
+«%<punct%>:«	PUNCT_PISTE	;
+
+LEXICON SCONJ
+
+# ;
+
+LEXICON SYM
+
+¼%<sym%>%<n%>:¼	SYM_.	;
+½%<sym%>%<n%>:½	SYM_.	;
+¹%<sym%>%<n%>:¹	SYM_.	;
+€%<sym%>:€	SYM_.	;
+×%<sym%>:×	SYM_.	;
+·%<sym%>:·	SYM_.	;
+®%<sym%>:®	SYM_.	;
+™%<sym%>:™	SYM_.	;
+@%<sym%>:@	SYM_.	;
+¤%<sym%>:¤	SYM_.	;
+¢%<sym%>:¢	SYM_.	;
+*%<sym%>:*	SYM_.	;
+#%<sym%>%<n%>:#	SYM_.	;
+$%<sym%>:$	SYM_.	;
+£%<sym%>:£	SYM_.	;
+₤%<sym%>:₤	SYM_.	;
+|%<sym%>:|	SYM_.	;
+¶%<sym%>:¶	SYM_.	;
+%%%<sym%>%<n%>:%%	SYM_.	;
++%<sym%>:+	SYM_.	;
+♥%<sym%>:♥	SYM_.	;
+→%<sym%>:→	SYM_.	;
+^%<sym%>:^	SYM_.	;
+≤%<sym%>:≤	SYM_.	;
+=%<sym%>%<n%>:=	SYM_.	;
+≥%<sym%>%<n%>:≥	SYM_.	;
+µ%<sym%>%<n%>:µ	SYM_.	;
+%;-)%<sym%>:%;-)	SYM_.	;
+%;)%<sym%>:%;)	SYM_.	;
+%:-)%<sym%>:%:-)	SYM_.	;
+%:-#%<sym%>:%:-#	SYM_.	;
+%:)%<sym%>:%:)	SYM_.	;
+%:#%<sym%>:%:#	SYM_.	;
+‘%<sym%>:‘	SYM_.	;
+§%<sym%>:§	SYM_.	;
+♪%<sym%>:♪	SYM_.	;
+☹%<sym%>:☹	SYM_.	;
+☺%<sym%>:☺	SYM_.	;
+☻%<sym%>:☻	SYM_.	;
+
+´%<sym%>:´	SYM_.	;
+`%<sym%>:`	SYM_.	;
+±%<sym%>:±	SYM_.	;
+−%<sym%>:−	SYM_.	;
+~%<sym%>:~	SYM_.	;
+_%<sym%>:_	SYM_.	;
+\%<sym%>:\	SYM_.	;
+‰%<sym%>:‰	SYM_.	;
+¥%<sym%>:¥	SYM_.	;
+°%<sym%>:°	SYM_.	;
+©%<sym%>:©	SYM_.	;
+§§%<sym%>:§§	SYM_.	;
+%%%%%<sym%>:%%%%	SYM_.	;
+′%<sym%>:′	SYM_.	;
+²%<sym%>%<n%>:²	SYM_.	;
+€%<sym%>:€	SYM_.	;
+¥%<sym%>:¥	SYM_.	;
+,%<sym%>:,	SYM_.	;
+#%<sym%>%<n%>:#	SYM_.	;
+$%<sym%>:$	SYM_.	;
+%<3%<sym%>:%<3	SYM_.	;
+³%<sym%>%<n%>:³	SYM_.	;
+%:-D%<sym%>:%:-D	SYM_.	;
+%:D%<sym%>:%:D	SYM_.	;
+m€%<sym%>:m€	SYM_.	;
+M€%<sym%>:M€	SYM_.	;
+%:-P%<sym%>:%:-P	SYM_.	;
+%:P%<sym%>:%:P	SYM_.	;
+%:-x%<sym%>:%:-x	SYM_.	;
+%:x%<sym%>:%:x	SYM_.	;
+%:-X%<sym%>:%:-X	SYM_.	;
+%:X%<sym%>:%:X	SYM_.	;
+ %<sym%>: 	SYM_.	;
+
+LEXICON VERB
+
+ozuttoa%<vblex%>:ozut VERB_OZUT/TOA ;
+
+LEXICON X
+
+# ;
+
+LEXICON SUFFIX
+
+# ;
+
+LEXICON ABBREVIATION
+
+# ;
+
+LEXICON ACRONYM
+
+# ;
+
+!! Puncts etc.
+
+LEXICON PUNCT_NONSTD_DASH_LOOP
+:- PUNCT_NONSTD_DASH_LOOP ;
+:- # ;
+
+LEXICON PUNCT_NONSTD_EXCL_LOOP
+:%! PUNCT_NONSTD_EXCL_LOOP ;
+:%! # ;
+
+!! Stems
+
+LEXICON AUX_O/LLA
+
+0:llu   AUX_PCP ;
+0:le    AUX_CONNEG_0 ;
+0:n     AUX_3SG_0 ;
+
+LEXICON AUX_E/I
+
+0:i    AUX_3SG_0 ;
+
+
+LEXICON VERB_OZUT/TOA
+
+0:etti VERB_PASSIVE_H ;
+
+LEXICON ADJ_OMA
+
+0:i ADJ_CASES_PL ;
+0:a ADJ_CASES_SG ;
+
+LEXICON ADJ_KIELI/NE
+
+0:ne ADJ_SGNOM_0 ;
+0:ze ADJ_CASES_SG ;
+
+LEXICON PROPN_PETROSKOI
+
+0 PROPN_CASES ;
+
+
+LEXICON NOUN_LAPS/I
+
+0:i NOUN_CASES_SG ;
+0   NOUN_CASES_PL ;
+
+LEXICON NOUN_RUA/DO
+
+0:to NOUN_CASES_SG ;
+0:do NOUN_CASES_SG ;
+
+LEXICON NOUN_KO/TI
+
+0:ti NOUN_CASES_SG_STRONG ;
+0:i  NOUN_CASES_SG_WEAK ;
+
+LEXICON NOUN_ELAVUTTAMI/NE
+
+0:ne NOUN_CASES_SG ;
+
+LEXICON PUNCT_PISTE
+
+0   # ;
+
+LEXICON SYM_.
+
+0 # ;
+
+!! Morphs
+LEXICON AUX_PCP
+
+%<pcpnut%>:t # ;
+
+LEXICON AUX_3SG_0
+
+%<p3%>%<sg%>:0 # ;
+
+LEXICON AUX_CONNEG_0
+
+%<conneg%>%<sg%>:0 # ;
+
+LEXICON VERB_PASSIVE_H
+
+%<actv%>%<pri%>%<p3%>%<pl%>:h # ;
+%<pasv%>:h # ;
+
+LEXICON PROPN_CASES
+
+%<sg%>%<gen%>:n # ;
+%<sg%>%<ill%>:h # ;
+
+LEXICON ADJ_SGNOM_0
+
+%<sg%>%<nom%>:0 # ;
+
+LEXICON ADJ_CASES_SG
+
+%<sg%>%<ine%>:s # ;
+%<sg%>%<gen%>:n # ;
+
+LEXICON ADJ_CASES_PL
+
+%<pl%>%<par%>:i # ;
+
+LEXICON NOUN_CASES_SG
+
+0 NOUN_CASES_SG_WEAK ;
+0 NOUN_CASES_SG_STRONG ;
+
+LEXICON NOUN_CASES_SG_STRONG
+
+%<sg%>%<nom%>:0 # ;
+
+LEXICON NOUN_CASES_SG_WEAK
+
+%<sg%>%<ine%>:s # ;
+
+LEXICON NOUN_CASES_PL
+
+%<pl%>%<gen%>:ien # ;
+
+
+! vim: set ft=xfst-lexc:
