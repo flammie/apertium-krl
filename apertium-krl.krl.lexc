@@ -134,6 +134,7 @@ LEXICON ADJ
 oma%<adj%>:om ADJ_OMA ;
 livvin#kieline%<adj%>:livvin0kieli ADJ_KIELI/NE ;
 pohjone%<adj%>:pohjo ADJ_KIELI/NE ;
+suomelane%<adj%>:suomela ADJ_KIELI/NE ;
 
 LEXICON ADP
 
@@ -190,7 +191,7 @@ kieli#pezä%<n%>:kieli0pez NOUN_PEZ/Ä ;
 
 LEXICON NUM
 
-# ;
+miljona%<num%>:miljona NUM_MILJONA ;
 
 LEXICON PRON
 
@@ -199,6 +200,7 @@ LEXICON PRON
 LEXICON PROPN
 
 Petroskoi%<np%>%<top%>:Petroskoi PROPN_PETROSKOI ;
+Karjala%<np%>%<top%>:Karjala PROPN_PETROSKOI ;
 
 LEXICON PUNCT
 
@@ -415,6 +417,14 @@ LEXICON NOUN_ELAVUTTAMI/NE
 
 0:ne NOUN_CASES_SG ;
 
+LEXICON NOUN_PEZ/Ä
+
+0:ä  NOUN_SGNOM_0 ;
+
+LEXICON NUM_MILJONA
+
+0 NUM_CASES ;
+
 LEXICON PUNCT_PISTE
 
 0   # ;
@@ -476,5 +486,13 @@ LEXICON NOUN_CASES_PL
 
 %<pl%>%<gen%>:ien # ;
 
+LEXICON NOUN_SGNOM_0
+
+%<sg%>%<nom%>:0 # ;
+
+LEXICON NUM_CASES
+
+%<sg%>%<nom%>:0 # ;
+%<sg%>%<gen%>:n # ;
 
 ! vim: set ft=xfst-lexc:
