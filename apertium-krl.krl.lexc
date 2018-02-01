@@ -151,7 +151,14 @@ ei%<vaux%>:e AUX_E/I ;
 
 LEXICON CCONJ
 
-# ;
+a%<cnjcoo%>:a #  ;
+vain%<cnjcoo%>:vain #  ;
+vai%<cnjcoo%>:vai #  ;
+ili%<cnjcoo%>:ili #  ;
+tai%<cnjcoo%>:tai #  ;
+ta%<cnjcoo%>:ta #  ;
+i%<cnjcoo%>:i #  ;
+vaikka%<cnjcoo%>:vaikka #  ;
 
 LEXICON CCONJ|VERB
 
@@ -258,7 +265,12 @@ LEXICON PUNCT
 
 LEXICON SCONJ
 
-# ;
+jotta%<cnjsub%>:jotta # ;
+kun%<cnjsub%>:kun # ;
+ni%<cnjsub%>:ni # ;
+kuni%<cnjsub%>:kuni # ;
+još%<cnjsub%>:još # ;
+kuin%<cnjsub%>:kuin # ;
 
 LEXICON SYM
 
