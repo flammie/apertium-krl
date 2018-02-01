@@ -138,7 +138,53 @@ suomelane%<adj%>:suomela ADJ_KIELI/NE ;
 
 LEXICON ADP
 
-# ;
+ympäri%<adp%>:ympäri # ;
+poikki%<adp%>:poikki # ;
+ilman%<adp%>:ilman # ;
+ennen%<adp%>:ennen # ;
+lähičči%<adp%>:lähičči # ;
+ieššä%<adp%>:ieššä # ;
+jälkeh%<adp%>:jälkeh # ;
+varoin%<adp%>:varoin # ;
+vaštah%<adp%>:vaštah # ;
+päin%<adp%>:päin # ;
+šuati%<adp%>:šuati # ;
+aličči%<adp%>:aličči # ;
+šuaten%<adp%>:šuaten # ;
+läpičči%<adp%>:läpičči # ;
+vailla%<adp%>:vailla # ;
+vaššen%<adp%>:vaššen # ;
+pitin%<adp%>:pitin # ;
+myöten%<adp%>:myöten # ;
+kohti%<adp%>:kohti # ;
+alta%<adp%>:alta # ;
+piäššä%<adp%>:piäššä # ;
+rinnalla%<adp%>:rinnalla # ;
+rinnalta%<adp%>:rinnalta # ;
+viereššä%<adp%>:viereššä # ;
+viereštä%<adp%>:viereštä # ;
+viereh%<adp%>:viereh # ;
+šiämeššä%<adp%>:šiämeššä # ;
+šiämeštä%<adp%>:šiämeštä # ;
+šiämeh%<adp%>:šiämeh # ;
+alla%<adp%>:alla # ;
+alta%<adp%>:alta # ;
+yllä%<adp%>:yllä # ;
+yličči%<adp%>:yličči # ;
+ympäri%<adp%>:ympäri # ;
+ympärillä%<adp%>:ympärillä # ;
+piäššä%<adp%>:piäššä # ;
+piäštä%<adp%>:piäštä # ;
+ieššä%<adp%>:ieššä # ;
+ieštä%<adp%>:ieštä # ;
+takuana%<adp%>:takuana # ;
+takua%<adp%>:takua # ;
+takuata%<adp%>:takuata # ;
+myöten%<adp%>:myöten # ;
+luo%<adp%>:luo # ;
+luokše%<adp%>:luokše # ;
+luona%<adp%>:luona # ;
+luota%<adp%>:luota # ;
 
 LEXICON ADV
 
