@@ -132,7 +132,10 @@ LEXICON Root
 LEXICON ADJ
 
 oma%<adj%>:om ADJ_OMA ;
+kielelline%<adj%>:kielelli ADJ_KIELI/NE ;
 livvin#kieline%<adj%>:livvin0kieli ADJ_KIELI/NE ;
+enetsi#kieline%<adj%>:enetsi0kieli ADJ_KIELI/NE ;
+hantin#kieline%<adj%>:hantin0kieli ADJ_KIELI/NE ;
 pohjone%<adj%>:pohjo ADJ_KIELI/NE ;
 suomelane%<adj%>:suomela ADJ_KIELI/NE ;
 
@@ -184,18 +187,38 @@ lapsi%<n%>:laps NOUN_LAPS/I ;
 vähembistökieli%<n%>:vähembistökiel NOUN_LAPS/I ;
 ruado%<n%>:rua NOUN_RUA/DO ;
 elavuttamine%<n%>:elavuttami NOUN_ELAVUTTAMI/NE ;
+karjalane%<n%>:karjala NOUN_ELAVUTTAMI/NE ;
+naine%<n%>:nai NOUN_ELAVUTTAMI/NE ;
 koti%<n%>:ko NOUN_KO/TI ;
 päivy#koti%<n%>:päivy0ko NOUN_KO/TI ;
 pohjone%<n%>:pohjo NOUN_ELAVUTTAMI/NE ;
 kieli#pezä%<n%>:kieli0pez NOUN_PEZ/Ä ;
+mua%<n%>:mu NOUN_MU/A ;
+niemi#mua%<n%>:niemi0mu NOUN_MU/A ;
+
 
 LEXICON NUM
 
+yksi%<num%>:y NUM_Y/KSI ;
+kaksi%<num%>:ka NUM_KA/KSI ;
+kolme%<num%>:kolm NUM_KOLM/E ;
+n’el’l’ä%<num%>:n’el’ NUM_NEL/LÄ ;
+viizi%<num%>:vii  NUM_VII/ZI ;
+kuuzi%<num%>:kuu  NUM_KUU/ZI ;
+seiččemen%<num%>:seičče  NUM_SEIČČE/MEN ;
+kaheksan%<num%>:kaheksa  NUM_KAHEKSA/N ;
+yheksän%<num%>:yheksä    NUM_YHEKSÄ/N ;
+kymmenen%<num%>:kymmene  NUM_KYMMENE/N ;
+sada%<num%>:sada       NUM_MILJONA ;
 miljona%<num%>:miljona NUM_MILJONA ;
+
 
 LEXICON PRON
 
-# ;
+minä%<prn%>%<use%_dialect%>%<pers%>%<p1%>:mi PRON_MI/NÄ ;
+mie%<prn%>%<pers%>%<p1%>%<sg%>:mi PRON_MI/E ;
+sie%<prn%>%<pers%>%<p2%>%<sg%>:si PRON_MI/E ;
+iče%<prn%>%<refl%>:iče   PRON_IČE ;
 
 LEXICON PROPN
 
@@ -359,10 +382,12 @@ LEXICON ACRONYM
 !! Puncts etc.
 
 LEXICON PUNCT_NONSTD_DASH_LOOP
+
 :- PUNCT_NONSTD_DASH_LOOP ;
 :- # ;
 
 LEXICON PUNCT_NONSTD_EXCL_LOOP
+
 :%! PUNCT_NONSTD_EXCL_LOOP ;
 :%! # ;
 
@@ -371,7 +396,9 @@ LEXICON PUNCT_NONSTD_EXCL_LOOP
 LEXICON AUX_O/LLA
 
 0:llu   AUX_PCP ;
+0:lla   AUX_PASSIVE_H ;
 0:le    AUX_CONNEG_0 ;
+0:di    AUX_PAST_STRONG ;
 0:n     AUX_3SG_0 ;
 
 LEXICON AUX_E/I
@@ -392,11 +419,26 @@ LEXICON ADJ_KIELI/NE
 
 0:ne ADJ_SGNOM_0 ;
 0:ze ADJ_CASES_SG ;
+0:s  ADJ_SGPAR_TY ;
 
 LEXICON PROPN_PETROSKOI
 
 0 PROPN_CASES ;
 
+LEXICON PRON_MI/NÄ
+
+0:nä  PRON_SGNOM_0 ;
+0:nu  PRON_CASES_SG ;
+
+LEXICON PRON_MI/E
+
+0:e PRON_SGNOM_0 ;
+0:u PRON_CASES_SG ;
+
+LEXICON PRON_IČE
+
+0  PRON_SGNOM_0 ;
+0  PRON_CASES_SG ;
 
 LEXICON NOUN_LAPS/I
 
@@ -415,15 +457,75 @@ LEXICON NOUN_KO/TI
 
 LEXICON NOUN_ELAVUTTAMI/NE
 
-0:ne NOUN_CASES_SG ;
+0:ne NOUN_SGNOM_0 ;
+0:ze NOUN_CASES_SG ;
+0:s  NOUN_SGPAR_TU ;
+0:z  NOUN_CASES_PL ;
 
 LEXICON NOUN_PEZ/Ä
 
 0:ä  NOUN_SGNOM_0 ;
+0    NOUN_CASES_PL ;
+
+LEXICON NOUN_MU/A
+
+0:a NOUN_SGNOM_0 ;
+0:a NOUN_CASES_SG ;
+
+LEXICON NUM_Y/KSI
+
+0:ksi NUM_SGNOM_0 ;
+0:hte NUM_CASES_SG ;
+
+LEXICON NUM_KA/KSI
+
+0:ksi NUM_SGNOM_0 ;
+0:hte NUM_CASES_SG ;
+
+LEXICON NUM_KOLM/E
+
+0:e NUM_SGNOM_0 ;
+0:e NUM_CASES_SG ;
+
+LEXICON NUM_NEL/LÄ
+
+0:l’ä  NUM_SGNOM_0 ;
+0:l’ä  NUM_CASES_SG ;
+
+LEXICON NUM_VII/ZI
+
+0:zi  NUM_SGNOM_0 ;
+0:jje NUM_CASES_SG ;
+
+LEXICON NUM_KUU/ZI
+
+0:zi  NUM_SGNOM_0 ;
+0:vve NUM_CASES_SG ;
+
+LEXICON NUM_SEIČČE/MEN
+
+0:men NUM_SGNOM_0 ;
+0:me  NUM_CASES_SG ;
+
+LEXICON NUM_KAHEKSA/N
+
+0:n  NUM_SGNOM_0 ;
+0    NUM_CASES_SG ;
+
+LEXICON NUM_YHEKSÄ/N
+
+0:n  NUM_SGNOM_0 ;
+0    NUM_CASES_SG ;
+
+LEXICON NUM_KYMMENE/N
+
+0:n  NUM_SGNOM_0 ;
+0   NUM_CASES_SG ;
 
 LEXICON NUM_MILJONA
 
-0 NUM_CASES ;
+0 NUM_SGNOM_0 ;
+0 NUM_CASES_SG ;
 
 LEXICON PUNCT_PISTE
 
@@ -440,11 +542,20 @@ LEXICON AUX_PCP
 
 LEXICON AUX_3SG_0
 
-%<p3%>%<sg%>:0 # ;
+%<act%>%<pri%>%<p3%>%<sg%>:0 # ;
 
 LEXICON AUX_CONNEG_0
 
 %<conneg%>%<sg%>:0 # ;
+
+LEXICON AUX_PAST_STRONG
+
+%<actv%>%<past%>%<act%>%<p3%>:h # ;
+
+LEXICON AUX_PASSIVE_H
+
+%<actv%>%<pri%>%<p3%>%<pl%>:h # ;
+%<pasv%>:h # ;
 
 LEXICON VERB_PASSIVE_H
 
@@ -460,10 +571,15 @@ LEXICON ADJ_SGNOM_0
 
 %<sg%>%<nom%>:0 # ;
 
+LEXICON ADJ_SGPAR_TY
+
+%<sg%>%<par%>:ty  # ;
+
 LEXICON ADJ_CASES_SG
 
 %<sg%>%<ine%>:s # ;
 %<sg%>%<gen%>:n # ;
+%<pl%>%<nom%>:t # ;
 
 LEXICON ADJ_CASES_PL
 
@@ -481,18 +597,43 @@ LEXICON NOUN_CASES_SG_STRONG
 LEXICON NOUN_CASES_SG_WEAK
 
 %<sg%>%<ine%>:s # ;
+%<sg%>%<gen%>:n # ;
 
 LEXICON NOUN_CASES_PL
 
 %<pl%>%<gen%>:ien # ;
+%<pl%>%<all%>:ile # ;
 
 LEXICON NOUN_SGNOM_0
 
 %<sg%>%<nom%>:0 # ;
 
-LEXICON NUM_CASES
+LEXICON NOUN_SGPAR_TU
+
+%<sg%>%<par%>:tu # ;
+
+LEXICON NUM_SGNOM_0
 
 %<sg%>%<nom%>:0 # ;
+
+
+LEXICON NUM_CASES_SG
+
 %<sg%>%<gen%>:n # ;
+%<sg%>%<ill%>:h # ;
+%<pl%>%<nom%>:t # ;
+
+LEXICON PRON_SGNOM_0
+
+%<sg%>%<nom%>:0 # ;
+
+LEXICON PRON_CASES_SG
+
+%<sg%>%<gen%>:n # ;
+%<sg%>%<ine%>:s # ;
+%<sg%>%<ine%>:šša # ;
+%<sg%>%<ill%>:h # ;
+
+
 
 ! vim: set ft=xfst-lexc:
