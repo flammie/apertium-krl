@@ -136,8 +136,11 @@ kielelline%<adj%>:kielelli ADJ_KIELI/NE ;
 livvin#kieline%<adj%>:livvin0kieli ADJ_KIELI/NE ;
 enetsi#kieline%<adj%>:enetsi0kieli ADJ_KIELI/NE ;
 hantin#kieline%<adj%>:hantin0kieli ADJ_KIELI/NE ;
+permin#kieline%<adj%>:permin0kieli ADJ_KIELI/NE ;
 pohjone%<adj%>:pohjo ADJ_KIELI/NE ;
 suomelane%<adj%>:suomela ADJ_KIELI/NE ;
+ugrilane%<adj%>:ugrila ADJ_KIELI/NE ;
+tiettäväine%<adj%>:tiettäväi ADJ_KIELI/NE ;
 
 LEXICON ADP
 
@@ -191,7 +194,7 @@ luota%<adp%>:luota # ;
 
 LEXICON ADV
 
-# ;
+syvästi%<adv%>:syvästi # ;
 
 LEXICON AUX
 
@@ -205,9 +208,11 @@ vain%<cnjcoo%>:vain #  ;
 vai%<cnjcoo%>:vai #  ;
 ili%<cnjcoo%>:ili #  ;
 tai%<cnjcoo%>:tai #  ;
+da%<cnjcoo%>:da #  ;
 ta%<cnjcoo%>:ta #  ;
 i%<cnjcoo%>:i #  ;
 vaikka%<cnjcoo%>:vaikka #  ;
+libo%<cnjcoo%>:libo #  ;
 
 LEXICON CCONJ|VERB
 
@@ -237,7 +242,7 @@ LEXICON INTJ
 LEXICON NOUN
 
 lapsi%<n%>:laps NOUN_LAPS/I ;
-vähembistökieli%<n%>:vähembistökiel NOUN_LAPS/I ;
+vähembistö#kieli%<n%>:vähembistö0kiel NOUN_LAPS/I ;
 ruado%<n%>:rua NOUN_RUA/DO ;
 elavuttamine%<n%>:elavuttami NOUN_ELAVUTTAMI/NE ;
 karjalane%<n%>:karjala NOUN_ELAVUTTAMI/NE ;
@@ -248,7 +253,8 @@ pohjone%<n%>:pohjo NOUN_ELAVUTTAMI/NE ;
 kieli#pezä%<n%>:kieli0pez NOUN_PEZ/Ä ;
 mua%<n%>:mu NOUN_MU/A ;
 niemi#mua%<n%>:niemi0mu NOUN_MU/A ;
-
+joukko%<n%>:jouk NOUN_JOUK/KO ;
+projektu%<n%>:projekt NOUN_PROJEKT/U ;
 
 LEXICON NUM
 
@@ -272,11 +278,15 @@ minä%<prn%>%<use%_dialect%>%<pers%>%<p1%>:mi PRON_MI/NÄ ;
 mie%<prn%>%<pers%>%<p1%>%<sg%>:mi PRON_MI/E ;
 sie%<prn%>%<pers%>%<p2%>%<sg%>:si PRON_MI/E ;
 iče%<prn%>%<refl%>:iče   PRON_IČE ;
+kaikki%<prn%>%<indef%>:kai  PRON_KAI/KKI ;
+
+kudai%<prn%>%<interr%>:ku PRON_KU/DAI ;
 
 LEXICON PROPN
 
 Petroskoi%<np%>%<top%>:Petroskoi PROPN_PETROSKOI ;
 Karjala%<np%>%<top%>:Karjala PROPN_PETROSKOI ;
+Suomi%<np%>%<top%>:Suomi PROPN_PETROSKOI ;
 
 LEXICON PUNCT
 
@@ -395,7 +405,7 @@ _%<sym%>:_	SYM_.	;
 °%<sym%>:°	SYM_.	;
 ©%<sym%>:©	SYM_.	;
 §§%<sym%>:§§	SYM_.	;
-%%%%%<sym%>:%%%%	SYM_.	;
+%%%<sym%>:%%	SYM_.	;
 ′%<sym%>:′	SYM_.	;
 ²%<sym%>%<n%>:²	SYM_.	;
 €%<sym%>:€	SYM_.	;
@@ -477,10 +487,12 @@ LEXICON ADJ_KIELI/NE
 
 0:ne ADJ_SGNOM_0 ;
 0:ze ADJ_CASES_SG ;
+0:z  ADJ_CASES_PL ;
 0:s  ADJ_SGPAR_TY ;
 
 LEXICON PROPN_PETROSKOI
 
+0 PROPN_SGNOM_0 ;
 0 PROPN_CASES ;
 
 LEXICON PRON_MI/NÄ
@@ -498,20 +510,43 @@ LEXICON PRON_IČE
 0  PRON_SGNOM_0 ;
 0  PRON_CASES_SG ;
 
+LEXICON PRON_KAI/KKI
+
+0 PRON_SGNOM_0 ;
+0:kki PRON_SGNOM_0 ;
+0:ki  PRON_CASES_SG_WEAK ;
+
+LEXICON PRON_KU/DAI
+
+0:dai PRON_SGNOM_0 ;
+0:dua PRON_CASES_SG ;
+
+
 LEXICON NOUN_LAPS/I
 
 0:i NOUN_CASES_SG ;
 0   NOUN_CASES_PL ;
+
+LEXICON NOUN_PROJEKT/U
+
+0:u NOUN_SGNOM_0 ;
+0:a NOUN_CASES_SG ;
 
 LEXICON NOUN_RUA/DO
 
 0:to NOUN_CASES_SG ;
 0:do NOUN_CASES_SG ;
 
+LEXICON NOUN_JOUK/KO
+
+0:ko NOUN_SGNOM_0 ;
+0:o NOUN_CASES_SG_WEAK ;
+
 LEXICON NOUN_KO/TI
 
-0:ti NOUN_CASES_SG_STRONG ;
+0:ti NOUN_SGNOM_0 ;
 0:i  NOUN_CASES_SG_WEAK ;
+0:dilo  NOUN_CASES_LO/I_PL ;
 
 LEXICON NOUN_ELAVUTTAMI/NE
 
@@ -620,6 +655,10 @@ LEXICON VERB_PASSIVE_H
 %<actv%>%<pri%>%<p3%>%<pl%>:h # ;
 %<pasv%>:h # ;
 
+LEXICON PROPN_SGNOM_0
+
+%<sg%>%<nom%>:0 # ;
+
 LEXICON PROPN_CASES
 
 %<sg%>%<gen%>:n # ;
@@ -642,15 +681,11 @@ LEXICON ADJ_CASES_SG
 LEXICON ADJ_CASES_PL
 
 %<pl%>%<par%>:i # ;
+%<pl%>%<gen%>:ien # ;
 
 LEXICON NOUN_CASES_SG
 
 0 NOUN_CASES_SG_WEAK ;
-0 NOUN_CASES_SG_STRONG ;
-
-LEXICON NOUN_CASES_SG_STRONG
-
-%<sg%>%<nom%>:0 # ;
 
 LEXICON NOUN_CASES_SG_WEAK
 
@@ -661,6 +696,11 @@ LEXICON NOUN_CASES_PL
 
 %<pl%>%<gen%>:ien # ;
 %<pl%>%<all%>:ile # ;
+
+LEXICON NOUN_CASES_LO/I_PL
+
+%<pl%>%<ine%>:is # ;
+%<pl%>%<ill%>:ih # ;
 
 LEXICON NOUN_SGNOM_0
 
@@ -687,9 +727,13 @@ LEXICON PRON_SGNOM_0
 
 LEXICON PRON_CASES_SG
 
+0 PRON_CASES_SG_WEAK ;
+
+LEXICON PRON_CASES_SG_WEAK
+
 %<sg%>%<gen%>:n # ;
 %<sg%>%<ine%>:s # ;
-%<sg%>%<ine%>:šša # ;
+%<sg%>%<ine%>%<use_dialectal%>:šša # ;
 %<sg%>%<ill%>:h # ;
 
 
