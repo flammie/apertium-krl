@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="krl-morph" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="krl.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="krl-gener" install="yes">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name="krl.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="krl-disam" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="krl.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="krl.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="krl-disam-debug" install="yes">
+    <pipeline>
+      <program name="hfst-proc -e -w">
+        <file name="krl.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-krl.krl.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>
