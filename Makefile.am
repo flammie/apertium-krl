@@ -24,8 +24,9 @@ TARGETS_COMMON =			\
 $(LANG1).autogen.hfst: .deps/$(LANG1).lexc.hfst
 	hfst-fst2fst -f olw -o $@ -i $<
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).lexc.hfst
-	hfst-invert -i $< |\
+$(LANG1).automorf.hfst: .deps/$(LANG1).lexc.hfst .deps/$(LANG1).morf.twol.hfst
+	hfst-compose-intersect .deps/$(LANG1).lexc.hfst .deps/$(LANG1).morf.twol.hfst  |\
+		hfst-invert |\
  		hfst-fst2fst -f olw -o $@
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
