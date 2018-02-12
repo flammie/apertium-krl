@@ -4,7 +4,9 @@ a e i o u y ä ö
 b c č d f g h j k l m n p q r s š t v w x z ž
 A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
-’:%' %':’ ’ %' ’:` ’:´ ’:0 
+! spell relax :-D
+s:š š:s s:z z:s
+’:%' %':’ ’ %' ’:` ’:´ ’:0
 %-
 
 ;
@@ -16,5 +18,5 @@ UpperOrSyms = A B C D E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž Å Ä Ö
 
 Rules
 
-"Relaxed ’ on analysis"
-’:%' => _ ;
+"Relaxed s:z on analysis"
+s:z => Vowels _ Vowels ;
