@@ -154,6 +154,7 @@ hyvä%<adj%>:hyv ADJ_HYV/Ä ;
 hyvä%<adj%>:par ADJ_PAR/EM ;
 viimeni%<adj%>:viime ADJ_KARJALAI/NI ;
 uuši%<adj%>:uu  ADJ_UU/ŠI ;
+mainijo%<adj%>:mainijo  ADJ_MAINIJO ;
 
 eri%<adj%>:eri ADJ_ERI ;
 
@@ -215,6 +216,7 @@ lisäkši%<post%>:lisäkši # ;
 
 LEXICON ADV
 
+mitein%<adv%>:mitein # ;
 enšin%<adv%>:enšin # ;
 takaperin%<adv%>:takaperin # ;
 eri%<adv%>:eri # ;
@@ -300,6 +302,7 @@ ainehisto%<n%>:ainehisto NOUN_NUMERO ;
 alku%<n%>:al  NOUN_AL/KU ;
 elavuttamine%<n%>:elavuttami NOUN_ELAVUTTAMI/NE ;
 emäntä%<n%>:emän NOUN_EMÄN/TÄ ;
+nero%<n%>:nero NOUN_NUMERO ;
 esityš#numero%<n%>:esityš0numero NOUN_NUMERO ;
 etno#tjuttora%<n%>:etno0tjuttor NOUN_KAZVATTAJ/A ;
 etno#tjuttora%<n%>:etno0tjuttor NOUN_ŠKOL/A ;
@@ -361,6 +364,7 @@ ruado%<n%>:rua NOUN_RUA/DO ;
 šattuma%<n%>:šattum NOUN_KAZVATTAJ/A ;
 kaččoja%<n%>:kaččoj NOUN_KAZVATTAJ/A ;
 šijahini%<n%>:šijahi NOUN_ŠIJAHI/NI ;
+tuuvvittamini%<n%>:tuuvvittami NOUN_ŠIJAHI/NI ;
 škola%<n%>:škol NOUN_ŠKOL/A ;
 škola%<n%>:škol NOUN_ŠKOL/A ;
 šoittu%<n%>:šoit  NOUN_ŠOIT/TU ;
@@ -378,6 +382,8 @@ polvi%<n%>:polv NOUN_LAPŠ/I ;
 kyykkäri#polvi%<n%>:kyykkäri0polv NOUN_LAPŠ/I ;
 vuosi%<n%>:vu  NOUN_VU/OSI ;
 kyykkä%<n%>:kyyk  NOUN_KYYK/KÄ ;
+työ%<n%>:t NOUN_T/YÖ ;
+käsi#työ%<n%>:käsi0t NOUN_T/YÖ ;
 
 LEXICON NUM
 
@@ -462,6 +468,7 @@ Potapovo%<np%>%<top%>:Potapovo PROPN_LUMIKELLO ;
 Konstantin%<np%>%<al%>:Konstantin PROPN_KONSTANTIN ;
 Maksim%<np%>%<ant%>%<m%>:Maksim PROPN_KONSTANTIN ;
 Zubanov%<np%>%<cog%>:Zubanov PROPN_KONSTANTIN ;
+Stankevičus%<np%>%<cog%>:Stankevičus PROPN_KONSTANTIN ;
 Tikkanen%<np%>%<cog%>:Tikkanen PROPN_KONSTANTIN ;
 Ust’-Avam%<np%>%<top%>:Ust’-Avam PROPN_KONSTANTIN ;
 Ust’-Avam%<np%>%<top%>%<use_nonstandard%>:Us’t-Avam PROPN_KONSTANTIN ;
@@ -960,6 +967,8 @@ LEXICON NOUN_ŠOIT/IN
 0:time NOUN_CASES_SG_BACK ;
 0:in  NOUN_SGPAR_TA ;
 0:tim   NOUN_CASES_PL_FRONT ;
+0:tim   NOUN_PLGEN_IEN ;
+0:tim   NOUN_PLPAR_IE ;
 
 LEXICON NOUN_JÄŠEN
 
@@ -1143,6 +1152,12 @@ LEXICON NOUN_VU/OSI
 
 0:osi  NOUN_SGNOM_0 ;
 0:uvve NOUN_CASES_SG_BACK ;
+
+LEXICON NOUN_T/YÖ
+
+0:yö   NOUN_SGNOM_0 ;
+0:yö   NOUN_CASES_SG_FRONT ;
+0:ö    NOUN_CASES_PL_FRONT ;
 
 LEXICON NUM_Y/KSI
 
@@ -1482,6 +1497,10 @@ LEXICON NOUN_SGPAR_TU
 
 %<sg%>%<par%>:tu # ;
 
+LEXICON NOUN_PLGEN_IEN
+
+%<pl%>%<gen%>:jen # ;
+
 LEXICON NOUN_PLGEN_JEN
 
 %<pl%>%<gen%>:jen # ;
@@ -1493,6 +1512,7 @@ LEXICON NOUN_PLPAR_IE
 LEXICON NOUN_PLPAR_JA
 
 %<pl%>%<par%>:ja # ;
+%<pl%>%<par%>%<pxsp3%>:jah # ;
 
 LEXICON NUM_SGNOM_0
 
