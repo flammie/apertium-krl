@@ -662,6 +662,7 @@ peluata%<vblex%>:pelua VERB_AVA/TA ;
 piteä%<vblex%>:pi  VERB_PIÄT/TEÄ ;
 pityä%<vblex%>:pi  VERB_PI/TYÄ ;
 piätteä%<vblex%>:piät  VERB_PIÄT/TEÄ ;
+piästä%<vblex%>:piäs  VERB_PIÄS/TÄ ;
 ruveta%<vblex%>:ruve VERB_AVA/TA ;
 šoittoa%<vblex%>:šoit  VERB_OZUT/TOA ;
 starinoija%<vblex%>:starinoi  VERB_STARINOI/JA ;
@@ -723,6 +724,12 @@ LEXICON VERB_JIÄ/HÄ
 0:h VERB_INF_Ä ;
 0  VERB_PRES_WEAK_FRONT ;
 0  VERB_PCP_TY ;
+
+LEXICON VERB_PIÄS/TÄ
+
+0:t VERB_INF_Ä ;
+0:se VERB_PRES_WEAK_FRONT ;
+0:s VERB_PCP_TY ;
 
 LEXICON VERB_KÄ/YVÄ
 
