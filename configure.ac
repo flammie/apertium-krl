@@ -20,3 +20,4 @@ AP_MKINCLUDE
 
 AC_OUTPUT([Makefile apertium-krl.pc])
 
+AC_MSG_ERROR([moved to https://github.com/apertium/apertium-krl])
